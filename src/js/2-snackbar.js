@@ -26,13 +26,15 @@ function handleCreate(event) {
             message: value,
             backgroundColor: '#59a10d',
             messageColor: '#fff',
-            timeout: '2000'
+            timeout: '2000',
+            position: 'topRight',
         }))
         .catch(error => iziToast.info({
             message: error,
             backgroundColor: '#ef4040',
             messageColor: '#fff',
-            timeout: '2000'
+            timeout: '2000',
+            position: 'topRight',
             
         })); 
     
