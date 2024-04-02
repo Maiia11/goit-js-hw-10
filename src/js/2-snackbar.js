@@ -23,10 +23,17 @@ function handleCreate(event) {
     })
     promises()
         .then(value => iziToast.info({
-            message: value
+            message: value,
+            backgroundColor: '#59a10d',
+            messageColor: '#fff',
+            timeout: '2000'
         }))
         .catch(error => iziToast.info({
-            message: error
+            message: error,
+            backgroundColor: '#ef4040',
+            messageColor: '#fff',
+            timeout: '2000'
+            
         })); 
     
     form.reset();
