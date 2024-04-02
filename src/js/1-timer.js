@@ -26,9 +26,12 @@ const options = {
         userSelectedDate = selectedDates[0];
         console.log(userSelectedDate);
       if (userSelectedDate < Date.now()) {
-      iziToast.error({
+        iziToast.error({
         message: 'Please choose a date in the future',
         position: 'topRight',
+        color: '#ef4040',
+        messageColor: '#fff',
+        timeout: '2000',
       }); 
     } else {
       startBtn.disabled = false;

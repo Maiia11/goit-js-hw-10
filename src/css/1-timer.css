@@ -1,7 +1,10 @@
+
+
 input {
+    box-sizing: border-box;
+    padding-left: 16px;
     width: 272px;
     height: 40px;
-    padding-left: 16px;
     border: 1px solid #808080;
     border-radius: 4px;
     font-family: "Montserrat", sans-serif;
@@ -9,7 +12,7 @@ input {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #2e2f42;
-    
+    margin-bottom: 32px;
     
     
 }
@@ -28,6 +31,7 @@ button {
     letter-spacing: 0.04em;
     color: #fff;;
     margin-left: 8px;
+    cursor: pointer;
 
 }
 
@@ -43,6 +47,7 @@ input:disabled{
 button:disabled{
     background-color: #cfcfcf;
     color: #989898;
+    pointer-events: none;
 }
 
 button:hover{
@@ -54,7 +59,8 @@ button:hover{
     display: flex;
     width: 346px;
     height: 72px;
-    gap: 8px;
+   gap: 24px;
+   justify-content: space-around;
         
 }
 
@@ -70,13 +76,23 @@ button:hover{
 .field{
     width: 55px;
     height: 72px;
+    text-align: center;
 
     
 }
 
+.value{
+font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
 .label {
     display: flex;
-    font-family: "Montserrat", sans-serif;
+font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
