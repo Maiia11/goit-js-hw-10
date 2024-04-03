@@ -82,6 +82,7 @@ function convertMs(ms) {
 
 function stopTimer() {
   clearInterval(intervalId);
+  const time = convertMs(0);
   updateTimerFace(time);
   intervalId = null;
   input.disabled = false;
